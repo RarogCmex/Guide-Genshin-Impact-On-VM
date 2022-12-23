@@ -54,6 +54,8 @@ And in customise screen we must add via button in left down corner:
 
 Check that you have UEFI/Q35 selected in overview page.
 
+![Overview](screenshots/overview.png?raw=true)
+
 Then you can begin installation (button in the top left corner).
 
 ## Windows installation
@@ -71,12 +73,15 @@ Generally you should follow the really good guide from Michael Hampton:
 https://superuser.com/a/1389159
 
 I'll just retell it. Instead of using virsh, you may edit XML in the "Details" view of virt-manager. The CPU section will look like this:
+
 ```
   <cpu mode='host-model' check='partial'>
     <model fallback='allow'/>
   </cpu>
 ```
+
 You need to add an element to remove the hypervisor CPU feature, causing it to look like this:
+
 ```
   <cpu mode='host-model' check='partial'>
     <model fallback='allow'/>
