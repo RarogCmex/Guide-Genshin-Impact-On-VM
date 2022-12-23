@@ -52,9 +52,13 @@ And in customise screen we must add via button in left down corner:
 1. Storage -> virtio-win iso from step 3 as SATA CDROM device.
 2. Storage -> check "select or create custom device" -> in the field write manually path to your vm partition `/dev/disk/by-partlabel/guestvm` -> device type: disk device -> **bus type:virtio**
 
+![Overview](screenshots/create_storage.png?raw=true)
+
 Check that you have UEFI/Q35 selected in overview page.
 
 ![Overview](screenshots/overview.png?raw=true)
+
+![Overview](screenshots/overview_2.png?raw=true)
 
 Then you can begin installation (button in the top left corner).
 
